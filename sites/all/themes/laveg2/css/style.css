@@ -20,6 +20,12 @@ body {
 	}
 }
 
+.region region-content {
+	position: absolute;
+    margin: 0;
+    width: 100%;
+}
+
 
 	/* --- HEADER --- */
 
@@ -58,50 +64,8 @@ body {
 	height: 81px;
 }
 
-.field-content div p {
-	#display: none !important;
-}
-
-.field-content img {
-	float: right;
-}
-
-.field-content img:nth-child(2) {
-	border-bottom: solid 3px #2d6075;
-    padding-left: 11px;
-    padding-right: 11px;
-    padding-bottom: 10px;
-}
-
-.header_menu_1 {
-	margin-top: 13px;
-	width: 24px;
-	height: 24px;
-    padding-left: 11px;	
-}
-
-.header_menu_2 {
-	margin-top: 11px;
-	width: 28px;
-	height: 29px;
-	padding-left: 13px;
-}
-
-.header_menu_3 {
-	margin-top: 14px;
-	width: 21px;
-	height: 21px;
-}
-
-#header_menu {
-	font-family: Open Sans;
-	color: #000000;
-	font-size: 15px; /* Approximation due to font substitution */
-	font-weight: 300;
-	line-height: 18px; /* Approximation due to font substitution */
-	text-align: left;	
-	margin-top: 16px;
-	padding-left: 13px;
+#block-block-1 {
+	padding-right: 15px;
 }
 
 #phone {
@@ -114,11 +78,68 @@ body {
 	margin-top: 6px;
 }
 
+#phone_img {
+    margin-left: 120px;
+    border-bottom: solid 3px #2d6075;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-bottom: 10px;
+}
+
+#phone_line {
+	float: right;
+	margin-top: -5px;
+}
+
+#block-block-2 {
+	padding-right: 15px;
+	margin-top: -50px;
+}
+
+#header_menu {
+	font-family: Open Sans;
+	color: #000000;
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 18px;
+	text-align: left;	
+	margin-top: 16px;
+	padding-left: 13px;
+}
+
+.header_menu_1 {
+	margin-top: 13px;
+	width: 24px;
+	height: 24px;
+    margin-left: 11px;	
+	background-image: url(/sites/all/themes/laveg2/images/header_menu.png);
+	background-position-y: -2px;
+}
+
+.header_menu_2 {
+	margin-top: 11px;
+	width: 28px;
+	height: 29px;
+	margin-left: 13px;
+	background-image: url(/sites/all/themes/laveg2/images/header_menu.png);
+	background-position-x: -24px;
+}
+
+.header_menu_3 {
+	margin-top: 14px;
+	width: 21px;
+	height: 21px;
+	background-image: url(/sites/all/themes/laveg2/images/header_menu.png);
+	background-position-x: 21px;
+    background-position-y: -4px;
+}
+
 	/* --- NAVIGATION --- */
 
 #navigation {
 	margin: 0;
 	margin-top: 34px;
+	height: 54px;
 	border: solid 1px black;
 	background-color: black;
     background-image: url(/sites/all/themes/laveg2/images/navigation.png);
@@ -134,7 +155,7 @@ body {
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 22px;
+	margin-top: 15px;
 	margin-bottom: 21px;
 }
 
@@ -169,8 +190,8 @@ body {
     float: right;
     width: 280px;
     height: 541px;
-    top: 125px;
-    left: 290px;
+    top: 118px;
+    left: 166px;
     z-index: 99;
 	background-color: transparent;
 	background-image: url(/sites/all/themes/laveg2/images/redmenu.png);	
@@ -272,7 +293,7 @@ button {
 	text-align: center;	
 	border: 0;
 	margin: 9px;
-	margin-top: 22px;
+	margin-top: 21px;
 }
 
 input[type=radio] {
@@ -329,13 +350,18 @@ input[type=radio]:checked + label:before {
 	display: none;
 }
 
+#block-views-slider-block {
+	width: 1130px;
+}
+	
 #slider_box {
 	width: 1130px;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 617px;
+	/*margin-bottom: 617px;*/
 }
 
+/*
 #main1 {
 	margin: 0;
 	position: absolute;
@@ -360,7 +386,7 @@ input[type=radio]:checked + label:before {
 	background-image: url(/sites/all/themes/laveg2/images/main3.png);
 	background-size: cover;
 }
-
+*/
 #views_slideshow_cycle_teaser_section_slider-block,
 #views_slideshow_cycle_div_slider-block_0,
 #views_slideshow_cycle_div_slider-block_1,
@@ -372,6 +398,7 @@ input[type=radio]:checked + label:before {
 #block-views-welcome-block {
     position: absolute;
 	margin: 0;
+	/*margin-top: 643px;*/
 	width: 100%;
 	z-index: 75;
 }
@@ -384,7 +411,6 @@ input[type=radio]:checked + label:before {
 
 #block-views-welcome-block h2 {
 	width: 1100px;
-	margin-top: 643px;
     margin-right: auto;
     margin-left: auto;
 	padding-right: 15px;
@@ -439,7 +465,7 @@ input[type=radio]:checked + label:before {
 	z-index: 50;
 	width: 100%;
 	margin: 0;
-    margin-top: 890px;	
+    margin-top: /*890*/274px;	
 }
 
 @media (max-width: 1130px) {
@@ -540,7 +566,7 @@ input[type=radio]:checked + label:before {
 	background-color: #A90D24;
 	width: 73px;
 	height: 36px;
-	margin-top: 23px;
+	margin-top: 13px;
 	border-radius: 5px;
 	font-family: 'Myriad Pro';
 	color:
@@ -553,12 +579,12 @@ input[type=radio]:checked + label:before {
 #block-views-services-block {
     position: absolute;
     margin: 0;
+    margin-top: /*1193*/577px;	
     width: 100%;
 }
 
 #block-views-services-block h2 {
     width: 1100px;
-    margin-top: 1193px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -580,19 +606,28 @@ input[type=radio]:checked + label:before {
     padding-left: 15px;
 }
 
-#block-views-services-block ul {
+#block-views-services-block .content ul {
     float: left;
     width: 270px;
     margin: 0;
     padding: 0;	
 }
 
-#block-views-services-block .mid_list {
-    padding-left: 140px;
-    padding-right: 140px;
+#block-views-services-block .content ul :hover {
+	font-family: 'Trebuchet MS';
+	color: #b5141d;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 36px;
+	text-align: left;
 }
 
-#block-views-services-block li {
+#block-views-services-block .mid_list {
+    padding-left: 140px !important;
+    padding-right: 140px !important;
+}
+
+#block-views-services-block .content li {
 	list-style-type: none;
 	font-family: 'Trebuchet MS';
 	color: #7b7b7b;
@@ -603,7 +638,7 @@ input[type=radio]:checked + label:before {
     border-bottom: solid 1px #E5E5E5;	
 }
 
-#block-views-services-block li:before {
+#block-views-services-block .content li:before {
     content: "►";
 	color: black;
 	font-size: 12px;
@@ -619,20 +654,11 @@ input[type=radio]:checked + label:before {
     margin-top: -19px;
 }
 
-#block-views-services-block ul :hover {
-	font-family: 'Trebuchet MS';
-	color: #b5141d;
-	font-size: 13px;
-	font-weight: 400;
-	line-height: 36px;
-	text-align: left;
-}
-
 #block-views-glasses-block {
     position: absolute;
 	width: 100%;
 	margin: 0;
-    margin-top: 1422px;	
+    margin-top: /*1422*/806px;	
 }
 
 @media (max-width: 1130px) {
@@ -696,7 +722,7 @@ input[type=radio]:checked + label:before {
     position: absolute;
 	width: 100%;
 	margin: 0;
-    margin-top: 1824px;	
+    margin-top: /*1824*/1208px;	
 }
 
 @media (max-width: 1130px) {
@@ -721,7 +747,7 @@ input[type=radio]:checked + label:before {
 	font-family: 'Trebuchet MS';
 	color:
 	#ffffff;
-	font-size: 11px;
+	font-size: 13px;
 	font-weight: 400;
 	text-align: left;	
 }
@@ -739,7 +765,7 @@ input[type=radio]:checked + label:before {
 	float: left;
 	height: 29px;
     margin-top: 24px;
-	padding-left: 28px;
+	padding-left: 32px;
 	padding-top: 10px;
     background-image: url(/sites/all/themes/laveg2/images/mark.png);
     background-repeat: no-repeat;
@@ -750,7 +776,7 @@ input[type=radio]:checked + label:before {
 	height: 29px;
     margin-top: 24px;
 	margin-left: 50px;
-    padding-left: 19px;	
+    padding-left: 23px;	
 	padding-top: 10px;
     background-image: url(/sites/all/themes/laveg2/images/phone.png);
 	background-position-y: 4px;
@@ -762,7 +788,7 @@ input[type=radio]:checked + label:before {
 	height: 29px;
     margin-top: 24px;
 	margin-left: 79px;
-    padding-left: 23px;	
+    padding-left: 27px;	
 	padding-top: 10px;
     background-image: url(/sites/all/themes/laveg2/images/mobile.png);
 	background-position-y: 4px;
@@ -774,7 +800,7 @@ input[type=radio]:checked + label:before {
 	height: 29px;
     margin-top: 24px;
 	margin-left: 70px;
-    padding-left: 34px;	
+    padding-left: 38px;	
 	padding-top: 10px;
     background-image: url(/sites/all/themes/laveg2/images/email.png);
 	background-position-y: 8px;
@@ -784,7 +810,7 @@ input[type=radio]:checked + label:before {
 #contact .img_email a {
     font-family: 'Trebuchet MS';
     color: #ffffff;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 400;
     text-decoration: none;
 }

@@ -7,9 +7,3 @@ core = 7.x
 
 stylesheets[all][] = css/style.css
 
-
-; Information added by Drupal.org packaging script on 2016-12-07
-version = "1.0"
-project = "drupal"
-datestamp = "1481152423"
-
