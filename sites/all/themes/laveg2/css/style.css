@@ -349,10 +349,6 @@ input[type=radio]:checked + label:before {
 #content h1 {
 	display: none;
 }
-
-#block-views-slider-block {
-	width: 1130px;
-}
 	
 #slider_box {
 	width: 1130px;
@@ -461,7 +457,7 @@ input[type=radio]:checked + label:before {
 }
 
 #block-views-more-menu-block {
-    position: absolute;
+    position: relative;
 	z-index: 50;
 	width: 100%;
 	margin: 0;
@@ -577,10 +573,10 @@ input[type=radio]:checked + label:before {
 }
 
 #block-views-services-block {
-    position: absolute;
-    margin: 0;
-    margin-top: /*1193*/577px;	
+    position: relative;
+    margin: 0;	
     width: 100%;
+	height: 210px;
 }
 
 #block-views-services-block h2 {
@@ -655,10 +651,9 @@ input[type=radio]:checked + label:before {
 }
 
 #block-views-glasses-block {
-    position: absolute;
+    position: relative;
 	width: 100%;
 	margin: 0;
-    margin-top: /*1422*/806px;	
 }
 
 @media (max-width: 1130px) {
@@ -719,10 +714,9 @@ input[type=radio]:checked + label:before {
 }
 
 #footer {
-    position: absolute;
+    position: relative;
 	width: 100%;
 	margin: 0;
-    margin-top: /*1824*/1208px;	
 }
 
 @media (max-width: 1130px) {
@@ -745,8 +739,7 @@ input[type=radio]:checked + label:before {
 #contact {
 	background-color: #2d2d2d;
 	font-family: 'Trebuchet MS';
-	color:
-	#ffffff;
+	color: #ffffff;
 	font-size: 13px;
 	font-weight: 400;
 	text-align: left;	
@@ -761,58 +754,77 @@ input[type=radio]:checked + label:before {
     padding-left: 15px;	
 }
 
+#contact ul {
+    margin: 0;
+    margin-top: 24px;	
+    display: inline-flex;
+	background-color: #2d2d2d;
+	font-family: 'Trebuchet MS';
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 400;
+	text-align: left;	
+}
+
+#contact li {
+    font-size: 14px;
+    list-style: none;
+    padding-top: 10px;
+}
+
+
+#contact ul li a {
+    font-family: 'Trebuchet MS';
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
 #contact .img_mark {
 	float: left;
-	height: 29px;
-    margin-top: 24px;
-	padding-left: 32px;
-	padding-top: 10px;
-    background-image: url(/sites/all/themes/laveg2/images/mark.png);
+    height: 29px;
+    width: 18px;
+    margin-top: -7px;
+    margin-left: -37px;
+    background-image: url(/sites/all/themes/laveg2/images/footer_img.png);
     background-repeat: no-repeat;
 }
 
 #contact .img_phone {
 	float: left;
-	height: 29px;
-    margin-top: 24px;
-	margin-left: 50px;
-    padding-left: 23px;	
-	padding-top: 10px;
-    background-image: url(/sites/all/themes/laveg2/images/phone.png);
-	background-position-y: 4px;
-    background-repeat: no-repeat;	
+    height: 29px;
+    width: 9px;
+    margin-top: -7px;
+	margin-left: 37px;
+    margin-right: 15px;
+    background-image: url(/sites/all/themes/laveg2/images/footer_img.png);
+    background-repeat: no-repeat;
+	background-position-x: -18px;
 }
 
 #contact .img_mobile {
 	float: left;
-	height: 29px;
-    margin-top: 24px;
-	margin-left: 79px;
-    padding-left: 27px;	
-	padding-top: 10px;
-    background-image: url(/sites/all/themes/laveg2/images/mobile.png);
-	background-position-y: 4px;
-    background-repeat: no-repeat;	
+    height: 29px;
+    width: 13px;
+    margin-top: -7px;
+	margin-left: 47px;
+    margin-right: 15px;
+    background-image: url(/sites/all/themes/laveg2/images/footer_img.png);
+    background-repeat: no-repeat;
+	background-position-x: -27px;
 }
 
 #contact .img_email {
 	float: left;
-	height: 29px;
-    margin-top: 24px;
-	margin-left: 70px;
-    padding-left: 38px;	
-	padding-top: 10px;
-    background-image: url(/sites/all/themes/laveg2/images/email.png);
-	background-position-y: 8px;
-    background-repeat: no-repeat;	
-}
-
-#contact .img_email a {
-    font-family: 'Trebuchet MS';
-    color: #ffffff;
-    font-size: 13px;
-    font-weight: 400;
-    text-decoration: none;
+    height: 29px;
+    width: 24px;
+    margin-top: -2px;
+	margin-left: 47px;
+    margin-right: 15px;
+    background-image: url(/sites/all/themes/laveg2/images/footer_img.png);
+    background-repeat: no-repeat;
+	background-position-x: -40px;
 }
 	
 #copyright {
